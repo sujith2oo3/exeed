@@ -10,20 +10,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Trirong&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img id ="bg"src="C:\Users\SUJITH\Desktop\exeed\Screenshot (106).png">
+    <!-- <img id ="bg"src="C:\Users\SUJITH\Desktop\exeed\Screenshot (106).png"> -->
     <nav id="navbar">
         <div class="logo">
             <h1 >NINE-TO-FIVER</h1>
 
         </div>
-        <div class ="right">
+        <div class ="right ">
             <ul>
-                <li class="items"><a href="C:\Users\SUJITH\Desktop\exeed\main page.html">Home</a></li>
-                <li class="items"><a href="C:\Users\SUJITH\Desktop\exeed\about us.html">About</a></li>
-                <li class="items"><a href="C:\Users\SUJITH\Desktop\exeed\contact us.html">Contact us</a></li>
-                <button class="items sin" id="login"> LOGIN</button>
+                <li class="active list">
+                    <a href="C:\Users\SUJITH\Desktop\exeed\main page.html">
+                        <span class="items">Home</span>
+                        <span class="icon"><ion-icon name="home"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="items">About</span>
+                        <span class="icon"><ion-icon name="contacts"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="C:\Users\SUJITH\Desktop\exeed\contact us.html">
+                        <span class="items">Contact us</span>
+                        <span class="icon"><ion-icon name="call"></ion-icon></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="items" id="login1">Login</span>
+                        <span class="icon" id="login"><ion-icon name="log-in"></ion-icon></span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
             </ul>
         </div> 
     </nav>
@@ -158,5 +180,8 @@
         
     </footer>
 </body>
+
+</script>
 <script src="mainpage.js"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </html>

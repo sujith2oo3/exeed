@@ -4,6 +4,12 @@ document.getElementById("login").addEventListener("click",function(){
 document.querySelector(".cancel").addEventListener("click",function(){
     document.querySelector(".popup").style.display="none"
 })
+document.getElementById("login1").addEventListener("click",function(){
+    document.querySelector(".popup").style.display ="flex"
+})
+document.querySelector(".cancel").addEventListener("click",function(){
+    document.querySelector(".popup").style.display="none"
+})
 document.getElementById("user-main").addEventListener("click",function(){
     document.querySelector(".user-popup").style.display ="flex"
 })
@@ -42,3 +48,13 @@ document.querySelector("#address1").addEventListener("keypress",function(g){
     document.querySelector("#user-login").style.display="block"    
 
 })
+function LogoHoverAdd() {
+    this.classList.add("active");
+}
+function LogoHoverRemove() {
+    this.classList.remove("active");
+}
+
+var logo = document.querySelector("list");
+logo.addEventListener("mouseover", LogoHoverAdd);
+logo.addEventListener("mouseout", LogoHoverRemove);
